@@ -1,31 +1,68 @@
+const countries = [
+  'Brazil',
+  'Venezuela',
+  'Argentina',
+  'Peru',
+  'Alemanha',
+  'USA',
+  'Bolivia',
+  'Chile'
+]
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Angular',
+  'Java',
+  'Python',
+  'Node',
+  'Redux'
+]
+
+const frontStack = ['HTML', 'CSS', 'JavaScript', 'React']
 
 
-/*const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
-const newArr = []
+//for (i = 0; i <= 10; i++) {
+//  console.log(i)
+//}
 
-for(let i = 0; i < countries.length; i++) {
-  newArr.push(countries[i].toLowerCase())
- 
-} 
+//for (i = 10; i >= 0; i--) {
+//  console.log(i)
+//}
 
-console.log(newArr)
 
-const numbers = [1, 2, 3, 4, 5]
-const newArr = []
-let sum = 0
+/*
+Write a loop that makes the following pattern using console.log():
 
-for(let i = 0; i < numbers.length; i++){
-  newArr.push( numbers[i] ** 2)
+    #
+    ##
+    ###
+    ####
+    #####
+    ######
+    #######
+
+
+//for (let i = 1; i <=7; i++){
+//  console.log('# '.repeat(i));
+//}
+console.log('1 i^2 i^3') 
+for (let i = 0; i <= 10; i++){
+  console.log(`${i}  ${i*i}  ${i*i*i}`) 
 }
-console.log(newArr)
-
 */
- 
-const numbers = [1, 2, 3, 4, 5]
 
-let sum = 0
-for (const num of numbers) {
-  sum = sum + num
+for (let i = 0; i <=100; i++){
+  if (i === 0){
+    console.log(i);
+  
+  } if (i % 2 === 0){
+    console.log(i);
+  } 
+
+  else {
+    continue
+  }  
 }
-
-console.log(sum)
