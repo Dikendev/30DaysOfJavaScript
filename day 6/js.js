@@ -189,13 +189,17 @@ function twelve(twelve){
 }
 
 // 13 .
-// 
+// Develop a small script which generate array of 5 random numbers
 
-function thirdTeen(thirdTeen){
-  var arr = [];
-  while(arr. length < 8){
-  var r = Math. floor(Math. random() * 100) + 1;
-  if(arr. indexOf(r) === -1) arr. push(r);
-  console. log(arr);
-
+function thirteen(thirteen){
+  let arr = [];
+  while (arr.length < 10){
+    let i = Math.floor(Math.random() * 100) +1;
+    if (arr.indexOf(i) === -1) arr.push(i);
+  }
+  console.log(arr);
 }
+
+// 14 .
+// Develop a small script which generate array of 5 random numbers and the numbers must be unique
+
