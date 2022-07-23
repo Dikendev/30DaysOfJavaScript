@@ -170,7 +170,7 @@ function eleven(eleven){
 }
 
 // 12.
-// Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array0
+// Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
 function twelve(twelve){
   let sumE = [0].push();
@@ -188,7 +188,7 @@ function twelve(twelve){
   console.log('The sum of all even numbers is: ', sumO);
 }
 
-// 13 .
+// 13.
 // Develop a small script which generate array of 5 random numbers
 
 function thirteen(thirteen){
@@ -200,6 +200,40 @@ function thirteen(thirteen){
   console.log(arr);
 }
 
-// 14 .
-// Develop a small script which generate array of 5 random numbers and the numbers must be unique
+// 14.
+//Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
+function fourteen(fourteen){
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxz0123456789";
+  
+  for(i = 0; i <5; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  return text;
+}
+//console.log(fourteen());
+
+// 15.
+// Develop a small script which generate a six characters random id:
+
+function fifteen(fifteen){
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxz0123456789";
+    for(i = 0; i < 5; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  return text;
+}
+//console.log(fifteen());
+
+// Level 2.1
+// Develop a small script which generate any number of characters random id:
+
+function one(one){
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxz0123456789";
+  var arrLgt = Math.floor(Math.random() * 10) +1 ;
+  for(i = 0; i <arrLgt; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  return text;
+}
+console.log(one());
