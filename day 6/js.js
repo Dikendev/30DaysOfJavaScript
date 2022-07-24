@@ -2,123 +2,134 @@
 // 1.
 // Iterate 0 to 10 using for loop, do the same using while and do while loop
 
-function one1(one1){
+function one1(){
   for (let i = 0; i <= 10; i++){
     console.log(i);
   }
 }
+// one1();
 
-function one2(one2){
+function one2(){
   let i = 0;
   while (i <= 10){
     console.log(i);
-    i++
+    i++;
   }
 }
+// one2();
 
-function one3(one3){
+function one3(){
   let i = 0;
   do {
     console.log(i);
-    i++
-  } while (i <= 10)
+    i++;
+  } while (i <= 10);
 }
+// one3();
 
 // 2.
 // Iterate 10 to 0 using for loop, do the same using while and do while loop
 
-function two1(two1){
+function two1(){
   for (let i = 10; i >= 0; i--){
     console.log(i);
   }
 }
+// two1();
 
-function two2(two2){
-  let i = 10
+function two2(){
+  let i = 10;
   while (i >= 0){
     console.log(i);
-    i--
+    i--;
   }
 }
+// two2();
 
-function two3(two3){
+function two3(){
   let i = 10;
   do {
     console.log(i);
     i--
-  } while (i >= 0)
+  } while (i >= 0);
 }
+// two3();
 
 // 3.
 // Iterate 0 to n using for loop
 
-function three(three){
+function three(){
   let n = 10;
-  for ( i = 0; i <= n; i++){
+  for (i = 0; i <= n; i++){
    console.log(i);
   }
 }
+// three();
 
 // 4.
 // Write a loop that makes the following pattern using console.log():
 
-function four(four){
-  for (var i=1; i<=8; i++){
+function four(){
+  for (i=1; i<=8; i++){
     console.log("* ".repeat(i));
   }
 }
+// four();
 
 // 5.
 // Use loop to print the following pattern:
 
-function five(five){
+function five(){
   let i = 0;
   do {
-    console.log(`${i} * ${i} = ${i * i}` );
-    i++
-  } while (i <= 10)
+    console.log(`${i} * ${i} = ${i * i}`);
+    i++;
+  } while (i <= 10);
 }
+// five();
 
 // 6.
 // Using loop print the following pattern
 
-function six(six){
+function six(){
   let i = 0;
   console.log('i i^2 i^3');
   while (i <= 10){
     console.log(`${i}  ${i**2}  ${i**3}`);
-    i++
+    i++;
   } 
 }
+// six();
 
 // 7.
 // Use for loop to iterate from 0 to 100 and print only even numbers
 
-function seven(seven){
-  for (let i = 0; i <= 100; i++){
+function seven(){
+  for (i = 0; i <= 100; i++){
     if (i === 0){
       console.log( i + " is even");
     } else if (i % 2 === 0){
       console.log( i + " is even");
-    } else {continue}
- }
-
+    } else {continue};
+  }
 }
+// seven();
 
 // 8.
 // Use for loop to iterate from 0 to 100 and print only odd numbers
 
-function eight(eight){
+function eight(){
   for (let i = 0; i <= 100; i++){
     if (i === 0){
       continue;
     } else if (i % 2 === 0){
       continue;
     } else {
-      console.log(`${i} is a odd number`)
+      console.log(`${i} is a odd number`);
     }
- }
+  }
 }
+// eight()
 
 // 9.
 // Use for loop to iterate from 0 to 100 and print only prime numbers
@@ -126,8 +137,8 @@ function eight(eight){
 function isPrime(num) {
   if (num < 2) return false;
   for (var i = 2; i < num; i++){
-      if(num%i==0)
-          return false;
+    if(num%i==0)
+      return false;
   }
   return true;
 }
@@ -138,22 +149,25 @@ function nine(nine){
       console.log(i);
   }
 }
+// nine();
 
 // 10.
 // Use for loop to iterate from 0 to 100 and print the sum of all numbers.
 
-let sum = 0;
-function ten(ten){
+
+function ten(){
+  let sum = 0;
   for (let i = 1; i <= 100; i++){
     sum += i;
   }
   console.log('The sum of all numbers is: ', sum);
 }
+// ten();
 
 // 11.
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
-function eleven(eleven){
+function eleven(){
   let sumE = 0;
   let sumO = 0;
   for (let i = 0; i <= 100; i++){
@@ -164,15 +178,16 @@ function eleven(eleven){
     } else {
       sumO += i;
     }
- }
+  }
   console.log('The sum of all even numbers is: ', sumE);
   console.log('The sum of all odd numbers is: ', sumO);
 }
+// eleven();
 
 // 12.
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
-function twelve(twelve){
+function twelve(){
   let sumE = [0].push();
   let sumO = [0].push();
   for (let i = 0; i <= 100; i++){
@@ -187,48 +202,49 @@ function twelve(twelve){
   console.log('The sum of all even numbers is: ', sumE);
   console.log('The sum of all even numbers is: ', sumO);
 }
+// twelve();
 
 // 13.
 // Develop a small script which generate array of 5 random numbers
 
-function thirteen(thirteen){
+function thirteen(){
   let arr = [];
-  while (arr.length < 10){
+  while (arr.length < 5){
     let i = Math.floor(Math.random() * 100) +1;
     if (arr.indexOf(i) === -1) arr.push(i);
   }
   console.log(arr);
 }
+// thirteen();
 
 // 14.
 //Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
-function fourteen(fourteen){
+function fourteen(){
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxz0123456789";
-  
   for(i = 0; i <5; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));
   return text;
 }
-//console.log(fourteen());
+// console.log(fourteen());
 
 // 15.
 // Develop a small script which generate a six characters random id:
 
-function fifteen(fifteen){
+function fifteen(){
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxz0123456789";
     for(i = 0; i < 5; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));
   return text;
 }
-//console.log(fifteen());
+// console.log(fifteen());
 
 // Level 2.1
 // Develop a small script which generate any number of characters random id:
 
-function lv2One(one){
+function lv2One(){
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxz0123456789";
   var arrLgt = Math.floor(Math.random() * 10) +1 ;
@@ -236,29 +252,29 @@ function lv2One(one){
     text += possible.charAt(Math.floor(Math.random() * possible.length));
   return text;
 }
-//console.log(one());
+// console.log(lv2One());
 
 // 2.2
 // Write a script which generates a random hexadecimal number.
 
-function lv2Two(two){
+function lv2Two(){
   var random_hex_color = "";
   let n = (Math.random() * 0xfffff * 1000000).toString(16);
   return "#" + n.slice(0,6);
-};
-//console.log(lv2Two())
+}
+//console.log(lv2Two());
 
 // 2.3
 // Write a script which generates a random rgb color number.
 
-function lvl2three(three){
+function lvl2three(){
   var randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min +1));
   var r = randomBetween(0, 255);
   var g = randomBetween(0, 255);
   var b = randomBetween(0, 255);
   return `rgb(${r},${g},${b})`;
-}
-//console.log(lvl2three())
+};
+// console.log(lvl2three());
 
 // 2.4
 // Using the above countries array, create the following new array.
@@ -289,37 +305,38 @@ const webTechs = [
 
 const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
-function lvl2Four(four){
+function lvl2Four(){
   const uppercased = countries.map(countries => countries.toUpperCase()); 
   console.log(uppercased);
   
-}
-// lvl2Four()
+};
+// lvl2Four();
 
 // 2.5
 // Using the above countries array, create an array for countries length'.
 
-function lvl2Five(five){
+function lvl2Five(){
   const lengthWordCounter = countries.map(function(word){
     return word.length;   
   });
   console.log(lengthWordCounter);
-}
-lvl2Five();
+};
+// lvl2Five();
 
 // 2.6
 // Use the countries array to create the following array of arrays:
 // working
+
 function lvl2Six(six){
   loopcountries = [];
   const loops = countries.length;
   for( i = 0; i < loops; i++) {
-    countries.map 
-    i++
-    return 
-  }
-}
-lvl2Six()
+    countries.map;
+    i++;
+    return; 
+  };
+};
+// lvl2Six()
 
 // loop pra rodar esse script em cada item do array.
 //{
