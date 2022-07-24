@@ -228,7 +228,7 @@ function fifteen(fifteen){
 // Level 2.1
 // Develop a small script which generate any number of characters random id:
 
-function one(one){
+function lv2One(one){
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxz0123456789";
   var arrLgt = Math.floor(Math.random() * 10) +1 ;
@@ -236,4 +236,64 @@ function one(one){
     text += possible.charAt(Math.floor(Math.random() * possible.length));
   return text;
 }
-console.log(one());
+//console.log(one());
+
+// 2.2
+// Write a script which generates a random hexadecimal number.
+
+function lv2Two(two){
+  var random_hex_color = "";
+  let n = (Math.random() * 0xfffff * 1000000).toString(16);
+  return "#" + n.slice(0,6);
+};
+//console.log(lv2Two())
+
+// 2.3
+// Write a script which generates a random rgb color number.
+
+function lvl2three(three){
+  var randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min +1));
+  var r = randomBetween(0, 255);
+  var g = randomBetween(0, 255);
+  var b = randomBetween(0, 255);
+  return `rgb(${r},${g},${b})`;
+}
+//console.log(lvl2three())
+
+//2.4
+// Using the above countries array, create the following new array.
+
+const countries = [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+
+
+function lvl2Four(four){
+  const uppercased = countries.map(countries => countries.toUpperCase()); 
+  console.log(uppercased);
+}
+lvl2Four()
+
+
