@@ -260,7 +260,7 @@ function lvl2three(three){
 }
 //console.log(lvl2three())
 
-//2.4
+// 2.4
 // Using the above countries array, create the following new array.
 
 const countries = [
@@ -289,11 +289,40 @@ const webTechs = [
 
 const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
-
 function lvl2Four(four){
   const uppercased = countries.map(countries => countries.toUpperCase()); 
   console.log(uppercased);
+  
 }
-lvl2Four()
+// lvl2Four()
 
+// 2.5
+// Using the above countries array, create an array for countries length'.
 
+function lvl2Five(five){
+  const lengthWordCounter = countries.map(function(word){
+    return word.length;   
+  });
+  console.log(lengthWordCounter);
+}
+lvl2Five();
+
+// 2.6
+// Use the countries array to create the following array of arrays:
+// working
+function lvl2Six(six){
+  loopcountries = [];
+  const loops = countries.length;
+  for( i = 0; i < loops; i++) {
+    countries.map 
+    i++
+    return 
+  }
+}
+lvl2Six()
+
+// loop pra rodar esse script em cada item do array.
+//{
+  // pra pegar 1 item do array _  mostrar o 0 - 2 caractere _ mostar a quantidade length
+
+//}
