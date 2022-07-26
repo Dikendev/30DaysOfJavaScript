@@ -1,49 +1,24 @@
-function sumArrayValues(arr){
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++){
-    sum += arr[i];
-    }
-    return sum;
+// 1.
+// Declare a function fullName and it print out your full name.
+
+function fullName() {
+    console.log('Diego Kennedy Guimaraes Barros');
 }
-const numbers = [1, 2, 3, 4, 5,];
-// console.log(sumArrayValues(numbers));
+// fullName();
 
-const areaOfCircle = (radius) => {
-    let area = Math.PI * radius * radius;
-    return area;
+// 2.
+// Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
+
+function fullName2(firstName, lastName) {
+    fullName = `${firstName} ${lastName}`
+    return fullName; 
 }
-// console.log(areaOfCircle(11));
+console.log(fullName2('Diego Kennedy', 'Guimaraes Barros'));
+ 
+// 3.
+// Declare a function addNumbers and it takes two two parameters and it returns sum.
 
-(function(n){
-    console.log(n * n);
-})//(3);
-
-let squaredNum = (function(n){
-    return n * n;
-})(3);
-// console.log(squaredNum);
-
-//Arrow functions
-
-function square(n){
-    return n * n;
+function addNumbers(a, b) {
+    sum  = a + b;
+    return sum
 }
-// console.log(square(7));
-
-const square2= n => {
-    return n * n;
-}
-// console.log(square2(7));
-
-const square3 = n => n * n  // em uma unica linha de codigo
-// console.log(square3(3));
-
-const changeToUpperCase = arr => {
-    const newArr = [];
-    for(const element of arr){
-        newArr.push(element.toUpperCase());
-    }
-    return newArr;
-}
-const countries = ['Finland', 'Sweden', 'Norway'];
-console.log(changeToUpperCase(countries));
