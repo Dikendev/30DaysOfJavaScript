@@ -94,3 +94,32 @@ const weightOfSubstance = (mass, gravity = 9.81) => mass * gravity + 'N';
 // console.log('Weight of a an object in Newton: ', weightOfSubstance(50));
 
 // 12.
+// Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+
+const convertCelsiusToFahrenheit = (oC) => (oC * 9/5) + 32;
+// console.log(convertCelsiusToFahrenheit(30));
+
+// 13.
+// Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
+
+const BodyMassIndex = (weight, height) => {
+    let bmi = weight / (height * height);
+
+    if (bmi >= 30) {
+        console.log('Obese');
+    } else if (bmi >= 25) {
+        console.log('Overweight');
+    } else if (bmi >= 18.5) {
+        console.log('Normal');
+    } else {
+        console.log('Underweight');
+    }
+
+
+    
+}
+
+BodyMassIndex(2220, 3)
+
+
+
