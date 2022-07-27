@@ -102,7 +102,7 @@ const convertCelsiusToFahrenheit = (oC) => (oC * 9/5) + 32;
 // 13.
 // Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
 
-const BodyMassIndex = (weight, height) => {
+const bodyMassIndex = (weight, height) => {
   let bmi = weight / (height * height);
 
   if (bmi >= 30) {
@@ -115,7 +115,27 @@ const BodyMassIndex = (weight, height) => {
     console.log('Underweight');
   } 
 }
-BodyMassIndex(2220, 3)
+//bodyMassIndex(2220, 3)
 
+// 14.
+//Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
 
-
+function getSeason(month) {
+  
+  let winter = 'dec, december, jan, january, feb,february,12,1,2,';
+  let spring = 'mar,march,apr,april,may,3,4,5,';
+  let summer = 'jun,june,jul,july,aug,august,6,7,8,';
+  let fall = 'sep,september,oct,october,nov,november,9,10,11,';
+  let season = 'unknown';
+  if (winter.indexOf(month) != -1) {
+      season = 'winter';
+  } else if (spring.indexOf(month) != -1) {
+      season = 'spring';
+  } else if (summer.indexOf(month) != -1) {
+      season = 'summer';
+  } else if (fall.indexOf(month) != -1) {
+      season = 'fall';
+  }
+  return (season);
+}
+console.log('Season is:', getSeason('mar'));
