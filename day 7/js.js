@@ -138,4 +138,16 @@ function getSeason(month) {
   }
   return (season);
 }
-console.log('Season is:', getSeason('mar'));
+// console.log('Season is:', getSeason('mar'));
+
+// 15.
+//Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+
+let Array1 = 0, 10, 5;
+let Array2 = 0, -10, -2;
+array.Math.max(Array1)
+console.log(findMax(0, 10, 5))
+10
+console.log(findMax(0, -10, -2))
+0
+a = Array2.findMax()
