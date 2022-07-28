@@ -31,7 +31,28 @@ const person = {
   ],
   getFullName: function() {
     return `${this.fN} ${this.lN}`
-  },
-  
+  },  
 }
-console.log(person.getFullName());
+
+person.nationality = "Brazilian";
+person.country = 'Brabrazil';
+person.title = "Student";
+person.skills.push('Meteor');
+person.skills.push('SasS');
+person.isMarried = true;
+
+person.getPersonInfo = function() {
+  let skillsWithoutLastSkill = this.skills;
+  .splice(0, this.skills.length - 1);
+  .join(", ");
+  let lastSkill = this.skills.splice(this. skills.)}
+}
+
+
+
+
+
+console.log(person);
+
+
+
