@@ -175,3 +175,8 @@ function solveQuadEquation() {
   }
 }
 // solveQuadEquation();
+
+function date() {
+  const d = new Date;
+  return d
+} console.log(date())
