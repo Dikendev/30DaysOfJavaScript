@@ -176,7 +176,11 @@ function solveQuadEquation() {
 }
 // solveQuadEquation();
 
+// lvl 2 - 4.
+// Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+
 function date() {
   const d = new Date;
-  return d
-} console.log(date())
+  return d;
+} 
+// console.log(date())
