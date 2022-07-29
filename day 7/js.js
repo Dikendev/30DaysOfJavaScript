@@ -195,3 +195,16 @@ function swapValues() {
 }
 //swapValues()
 
+// lvl 2 - 6
+// Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+function reverseArray() {
+  let array = [1, 2, 3, 4, 5,]
+  let ret = new Array;
+  for(let i = array.length-1; i >= 0; i--) {
+    ret.push(array[i]);
+    
+  }
+  return ret;
+}
+// console.log(reverseArray());
