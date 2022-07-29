@@ -180,7 +180,18 @@ function solveQuadEquation() {
 // Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
 
 function date() {
-  const d = new Date;
+  const d = new Date();
   return d;
 } 
 // console.log(date())
+
+// lvl 2 - 5
+// Declare a function name swapValues. This function swaps value of x to y.
+
+function swapValues() {
+  let a = 5, b = 6;
+  [a, b] = [b, a];
+  console.log(`${a} ${b}`);
+}
+//swapValues()
+
