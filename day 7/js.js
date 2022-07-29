@@ -141,7 +141,37 @@ function getSeason(month) {
 // console.log('Season is:', getSeason('mar'));
 
 // 15.
-//Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+// Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
 
-// lvl2 1.
-//Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
+// lvl 2 - 1.
+// Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
+function solveLinEquation() {
+  let a = prompt("Enter the first number: ");
+  let b = prompt("Enter the second number: ");
+  let c = prompt("Enter the third number: ");
+  let discriminant = b * b - 4 * a * c;
+
+}
+
+
+// lvl 2 - 2.
+// Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
+
+function solveQuadEquation() {
+  let root1, root2;
+  let a = prompt("Enter the first number: ");
+  let b = prompt("Enter the second number: ");
+  let c = prompt("Enter the third number: ");
+  let discriminant = b * b - 4 * a * c;
+  
+  if (discriminant > 0) {
+    root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+      console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+  }
+  else if (discriminant == 0) {
+      root1 = root2 = -b / (2 * a);
+      console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+  }
+}
+// solveQuadEquation();
