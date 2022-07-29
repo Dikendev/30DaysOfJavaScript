@@ -209,14 +209,26 @@ function reverseArray() {
 }
 // console.log(reverseArray());
 
-var x = [ 'p0', 'p1', 'p2' ]; 
-call_me(x);
-
-Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
-
+// lvl 2 - 7
+// Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
 function call_me(params) {
-  for (i=0; i<params.length; i++) {
+  for (i=0; i < params.length; i++) {
     console.log(params[i])
+    
   }
+}
+let capArr = ['p0', 'p1', 'p2'];
+
+// call_me(capArr);
+
+// lvl 2 - 8
+// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+
+function addItem() {
+  let new = new Array;
+  for(i = 0; i < params.length; i++) {
+
+  }
+
 }
