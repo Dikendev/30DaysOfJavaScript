@@ -229,17 +229,4 @@ function addItem(skills) {
 // console.log(addItem());
 
 //lvl 2 - 9.
-// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
-
-function removeItem(rev) {
-  newArr = new Array;
-  rev = ['hoje', 'amanhã'];
-  for (i = 3; i <= rev.length; i--) {
-    newArr = ['Depis'];
-    i--;
-  }
-  return newArr
-  
-}
-console.log(removeItem());
-
+// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item7
