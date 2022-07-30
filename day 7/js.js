@@ -184,7 +184,7 @@ function date() {
 } 
 // console.log(date())
 
-// lvl 2 - 5
+// lvl 2 - 5.
 // Declare a function name swapValues. This function swaps value of x to y.
 
 function swapValues() {
@@ -194,7 +194,7 @@ function swapValues() {
 }
 //swapValues()
 
-// lvl 2 - 6
+// lvl 2 - 6.
 // Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
 
 function reverseArray() {
@@ -202,13 +202,12 @@ function reverseArray() {
   let ret = new Array;
   for(let i = array.length-1; i >= 0; i--) {
     ret.push(array[i]);
-    
   }
   return ret;
 }
 // console.log(reverseArray());
 
-// lvl 2 - 7
+// lvl 2 - 7.
 // Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
 function capitalizeArray(params) {
@@ -217,4 +216,30 @@ function capitalizeArray(params) {
   }
 }
 let capArrcap = ['p0', 'p1', 'p2'];
-capitalizeArray(capArrcap);
+// capitalizeArray(capArrcap);
+
+// lvl 2 - 8.
+// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item.
+
+function addItem(skills) {
+  skills = ['Html', 'CSS', 'JavaScript']
+  skills.push('Java', 'Angular');
+    return skills
+}
+// console.log(addItem());
+
+//lvl 2 - 9.
+// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+
+function removeItem(rev) {
+  newArr = new Array;
+  rev = ['hoje', 'amanhã'];
+  for (i = 3; i <= rev.length; i--) {
+    newArr = ['Depis'];
+    i--;
+  }
+  return newArr
+  
+}
+console.log(removeItem());
+
