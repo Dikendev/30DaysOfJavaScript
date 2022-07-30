@@ -153,7 +153,6 @@ function solveLinEquation() {
 
 }
 
-
 // lvl 2 - 2.
 // Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation.
 
@@ -212,23 +211,10 @@ function reverseArray() {
 // lvl 2 - 7
 // Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
 
-function call_me(params) {
+function capitalizeArray(params) {
   for (i=0; i < params.length; i++) {
-    console.log(params[i])
-    
+    console.log(params[i]);  
   }
 }
-let capArr = ['p0', 'p1', 'p2'];
-
-// call_me(capArr);
-
-// lvl 2 - 8
-// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
-
-function addItem() {
-  let new = new Array;
-  for(i = 0; i < params.length; i++) {
-
-  }
-
-}
+let capArrcap = ['p0', 'p1', 'p2'];
+capitalizeArray(capArrcap);
