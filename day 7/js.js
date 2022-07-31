@@ -228,5 +228,16 @@ function addItem(skills) {
 }
 // console.log(addItem());
 
-//lvl 2 - 9.
-// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item7
+// lvl 2 - 9.
+// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item7  
+
+
+// lvl 3 - 2.
+function rgbColorGenerator() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb, ${r}, ${g},${b}`;  
+}
+
+console.log(rgbColorGenerator());
