@@ -1,58 +1,17 @@
-//scope.js
-a = "JavaScript";
-b = 10;
-function letsLearnScope() {
-  console.log(a, b);
-  if (true) {
-    console.log(a, b);
-  }
-} 
-// console.log(a, b); // accessible
+// lvl 1
 
-const rectangle = {
-  length: 20,
-  width: 20
+const dog = {}
+console.log(dog);
+
+dog.name = 'Joy';
+dog.legs = 4;
+dog.color = 'White and brown';
+dog.age = '6 months';
+dog.bark = function() {  
+  return('woof woof'); 
 }
-
-//console.log(rectangle);
-
-const person = {
-  fN: 'Diego',
-  lN: 'Barros',
-  age: 250,
-  country: 'Brazil',
-  City: 'Blumenau',
-  skills: [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'MongoDB'
-  ],
-  getFullName: function() {
-    return `${this.fN} ${this.lN}`
-  },  
+dog.breed = 'lhasa apso';
+dog.getDogInfo = function() {
+  return `${this.name}, ${this.age}, ${this.color}, ${this.breed}`;
 }
-
-person.nationality = "Brazilian";
-person.country = 'Brabrazil';
-person.title = "Student";
-person.skills.push('Meteor');
-person.skills.push('SasS');
-person.isMarried = true;
-
-person.getPersonInfo = function() {
-  let skillsWithoutLastSkill = this.skills;
-  .splice(0, this.skills.length - 1);
-  .join(", ");
-  let lastSkill = this.skills.splice(this. skills.)}
-}
-
-
-
-
-
-console.log(person);
-
-
-
+console.log(dog.getDogInfo());
