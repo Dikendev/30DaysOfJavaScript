@@ -237,7 +237,28 @@ function rgbColorGenerator() {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
-  return `rgb, ${r}, ${g},${b}`;  
+  return `rgb(${r}, ${g},${b})`;  
+}
+console.log(rgbColorGenerator());
+
+// lvl 3 - 3.
+
+function generateRandomColor(){
+  let maxVal = 0xFFFFFF; // 16777215
+  let randomNumber = Math.random() * maxVal; 
+  randomNumber = Math.floor(randomNumber);
+  randomNumber = randomNumber.toString(16);
+  let randColor = randomNumber.padStart(6, 0);   
+  return `#${randColor.toUpperCase()}`
+}
+console.log(generateRandomColor());
+
+// lvl 3 - 7.
+function generateColors() {
+  const colors  = rgbColorGenerator()
+  const color2 =  generateRandomColor()  
+  return colors + color2  
 }
 
-console.log(rgbColorGenerator());
+console.log(generateColors());
+
