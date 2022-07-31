@@ -79,5 +79,44 @@
 //let jargon = /jargon/gi
 //console.log(string.match(jargon));
 
-const num = Math.floor(Math.random () * 100) // creates random number between 0 and 10
-console.log(num)
+// const num = Math.floor(Math.random () * 100) // creates random number between 0 and 10
+// console.log(num)
+
+
+
+
+
+
+  
+/*let array = new Array(5);
+let aux = 1;
+        
+for (let i = 0; i < array.length; i++) {
+  aux = aux * (i + 1);
+  array[i] = aux / 2;
+}
+console.log(array[3]); 
+
+
+
+function randomMethod(number) {
+  return number == 0 ? 1 : number * randomMethod(number - 1);
+
+}
+console.log(randomMethod(5));
+*/
+  
+
+
+function mininmum () {
+  let moneyBills = [200, 100, 50, 20, 10, 5, 2, 1];
+  let value = 336;
+  console.log("The minimum number of each money bill required to get the value %d is:", value);
+  for (let i = 0; i < moneyBills.length; i++) {
+      let moneyBillQuantity = value / moneyBills[i];
+      value = moneyBillQuantity * moneyBills[i];
+      console.log(`R$ %d = %d; ${moneyBills[i]}, ${moneyBillQuantity}`);
+  }
+}
+
+//console.log("R$ %d = %d; ", moneyBills[i], moneyBillQuantity);
