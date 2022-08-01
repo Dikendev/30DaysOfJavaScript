@@ -1,7 +1,7 @@
 // lvl 1
 
 const dog = {}
-console.log(dog);
+// console.log(dog);
 
 dog.name = 'Joy';
 dog.legs = 4;
@@ -29,4 +29,4 @@ users.sort(function (a, b) {
   return a.points.localeCompare(b.points);
 });
 
-console.log(users);
+// console.log(users);

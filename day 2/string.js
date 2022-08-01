@@ -145,4 +145,4 @@ function descendingWay() {
   } 
 }
 
-descendingWay()
+// descendingWay()
