@@ -83,40 +83,66 @@
 // console.log(num)
 
 
+// Proway Coderbyte
 
-
-
-
-  
-/*let array = new Array(5);
+let array = new Array(5);
 let aux = 1;
         
 for (let i = 0; i < array.length; i++) {
   aux = aux * (i + 1);
   array[i] = aux / 2;
 }
-console.log(array[3]); 
-
+// console.log(array[3]); 
 
 
 function randomMethod(number) {
   return number == 0 ? 1 : number * randomMethod(number - 1);
 
 }
-console.log(randomMethod(5));
-*/
+// console.log(randomMethod(5));
+
   
 
 
-function mininmum () {
+function minimum () {
   let moneyBills = [200, 100, 50, 20, 10, 5, 2, 1];
   let value = 336;
   console.log("The minimum number of each money bill required to get the value %d is:", value);
   for (let i = 0; i < moneyBills.length; i++) {
       let moneyBillQuantity = value / moneyBills[i];
       value = moneyBillQuantity * moneyBills[i];
-      console.log(`R$ %d = %d; ${moneyBills[i]}, ${moneyBillQuantity}`);
+      console.log("R$ %d = %d; ", moneyBills[i], moneyBillQuantity);      
   }
 }
+// minimum();
 
-//console.log("R$ %d = %d; ", moneyBills[i], moneyBillQuantity);
+
+
+
+function descendingWay() {
+  let a = 3;
+  let b = 2;
+  let c = 4;
+
+  if (a > b && a > c) {
+    if (b > c) {
+      console.log("%d, %d, %d", a, b, c);
+    } else {
+      console.log("%d, %d, %d", a, c, b);
+    }
+  } else if ( b > a && b > c) {
+    if (a > c) {
+      console.log("%d, %d, %d", b, a, c);
+    } else {
+      console.log("%d, %d, %d", b, c, a);
+    }
+  } else {
+    if (b > a) {
+      console.log("%d, %d, %d", c, a, b);
+    } else {
+      console.log("%d, %d, %d", c, b, a);
+    }
+  } 
+}
+
+descendingWay()
