@@ -1,14 +1,13 @@
+// lvl 1.
 
-
-const countries = [
-  'Brazil',
-  'Argentina',
-  'México',
-]
-
-const countriesToUpperCase = countries.map((country => country.toUpperCase()));
-
-console.log(countriesToUpperCase);
-
-const countriesFirstThreeLetters = countries.map((country => country.toUpperCase().slice(0,3)));
-console.log(countriesFirstThreeLetters)
+const countries = ['Finland', 'Sweden', 'Denmark', 'NorWay', 'IceLand'];
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const products = [
+  { product: 'banana', price: 3 },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: '' },
+  { product: 'avocado', price: 8 },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: '' },
+];
