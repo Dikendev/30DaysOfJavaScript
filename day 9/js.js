@@ -1,5 +1,3 @@
-// lvl 1.
-
 const countries = ['Finland', 'Sweden', 'Denmark', 'NorWay', 'IceLand'];
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook'];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -29,4 +27,10 @@ reduce: Takes a callback function, takes acumulator, current, and optional initi
 
 countries.forEach((element) => console.log(element));
 
+// lvl 1 - 4.
+// Use forEach to console.log each name in the names array.
+
+names.forEach(function(nameList) {
+  console.log(nameList);
+});
 
