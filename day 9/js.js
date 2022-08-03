@@ -34,3 +34,15 @@ names.forEach(function(nameList) {
   console.log(nameList);
 });
 
+// lvl 1 - 5.
+// Use forEach to console.log each number in the numbers array.
+
+numbers.forEach(function(numberList) {
+  console.log(numberList);
+});
+
+// lvl 1 - 6.
+// Use map to create a new array by changing each country to uppercase in the countries array.
+
+const countriesToUpperCase = countries.map((country) => country.toUpperCase())
+console.log(countriesToUpperCase);
