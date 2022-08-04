@@ -44,5 +44,11 @@ numbers.forEach(function(numberList) {
 // lvl 1 - 6.
 // Use map to create a new array by changing each country to uppercase in the countries array.
 
-const countriesToUpperCase = countries.map((country) => country.toUpperCase())
+const countriesToUpperCase = countries.map((country) => country.toUpperCase());
 console.log(countriesToUpperCase);
+
+// lvl 1 - 7
+// Use map to create an array of countries length from countries array.
+
+const countryList = countries.map((countries) => countries);
+console.log(countryList);
