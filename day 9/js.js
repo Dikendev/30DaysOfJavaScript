@@ -52,3 +52,15 @@ console.log(countriesToUpperCase);
 
 const countryList = countries.map((countries) => countries);
 console.log(countryList);
+
+// lvl 1 - 8
+// Use map to create a new array by changing each number to square in the numbers array
+
+const numbersSquare = numbers.map((num) => num * num);
+console.log(numbersSquare);
+console.log(numbers)
+
+
+
+
+
