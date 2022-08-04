@@ -102,6 +102,14 @@ console.log(countriesHaveSixLettersAndMore);
 // lvl 1 - 14
 // Use filter to filter out country start with 'E';
 const countriesWithE = countries.filter((country) => 
- country.startsWith('E')
+  country.startsWith('E')
 );
 console.log(countriesWithE);
+
+// lvl 1 - 15
+// Use filter to filter out only prices with values.
+
+const productsPriceMoreThanOne = products.filter((price) =>
+  price.price >= 1
+);
+console.log(productsPriceMoreThanOne);
