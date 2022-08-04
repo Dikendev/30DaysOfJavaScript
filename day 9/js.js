@@ -57,10 +57,24 @@ console.log(countryList);
 // Use map to create a new array by changing each number to square in the numbers array
 
 const numbersSquare = numbers.map((num) => num * num);
-console.log(numbersSquare);
-console.log(numbers)
+console.log(numbersSquare); // nao modifica a array original.
 
+// lvl 1 - 9
+// Use map to change to each name to uppercase in the names array
 
+const namesUppercase = names.map((name) => name.toUpperCase());
+console.log(namesUppercase);
 
+// lvl 1 - 10
+// Use map to map the products array to its corresponding prices.
 
+const mapProducts = products.map((pdt) => pdt);
+console.log(mapProducts);
 
+// lvl 1 - 11
+// Use filter to filter out countries containing land.
+
+const countriesContainingLand = countries.filter((country) => 
+  country.includes('land')
+);
+console.log(countriesContainingLand);
