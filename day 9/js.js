@@ -44,7 +44,9 @@ numbers.forEach(function(numberList) {
 // lvl 1 - 6.
 // Use map to create a new array by changing each country to uppercase in the countries array.
 
-const countriesToUpperCase = countries.map((country) => country.toUpperCase());
+const countriesToUpperCase = countries.map((country) =>
+  country.toUpperCase()
+);
 console.log(countriesToUpperCase);
 
 // lvl 1 - 7
@@ -62,7 +64,9 @@ console.log(numbersSquare); // nao modifica a array original.
 // lvl 1 - 9
 // Use map to change to each name to uppercase in the names array
 
-const namesUppercase = names.map((name) => name.toUpperCase());
+const namesUppercase = names.map((name) =>
+  name.toUpperCase()
+);
 console.log(namesUppercase);
 
 // lvl 1 - 10
@@ -78,3 +82,26 @@ const countriesContainingLand = countries.filter((country) =>
   country.includes('land')
 );
 console.log(countriesContainingLand);
+
+// lvl 1 - 12
+// Use filter to filter out countries having six character.
+
+const countriesHaveSixLetters = countries.filter((country) =>
+  country.length === 6
+);
+console.log(countriesHaveSixLetters);
+
+ // lvl 1 - 13
+ // Use filter to filter out countries containing six letters and more in the country array.
+
+const countriesHaveSixLettersAndMore = countries.filter((country) => 
+  country.length >= 6
+ );
+console.log(countriesHaveSixLettersAndMore);
+
+// lvl 1 - 14
+// Use filter to filter out country start with 'E';
+const countriesWithE = countries.filter((country) => 
+ country.startsWith('E')
+);
+console.log(countriesWithE);
