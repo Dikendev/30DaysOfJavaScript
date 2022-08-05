@@ -122,7 +122,11 @@ console.log(productsPriceMoreThanOne);
 const sum = numbers.reduce((acc, cur) => acc + cur, 0);
 console.log(sum);
 
+// lvl 1 - 18
+// Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+
 // lvl 1 - 19
 // Explain the difference between some and every
 
 // 'Some': Check if some of the elements are similar in one aspect. It returns Boolean, and  'every' check if all elements are similar in a aspect. It return boolean.
+
