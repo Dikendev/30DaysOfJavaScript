@@ -121,3 +121,8 @@ console.log(productsPriceMoreThanOne);
 //Use reduce to sum all the numbers in the numbers array.
 const sum = numbers.reduce((acc, cur) => acc + cur, 0);
 console.log(sum);
+
+// lvl 1 - 19
+// Explain the difference between some and every
+
+// 'Some': Check if some of the elements are similar in one aspect. It returns Boolean, and  'every' check if all elements are similar in a aspect. It return boolean.
