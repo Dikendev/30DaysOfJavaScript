@@ -113,3 +113,11 @@ const productsPriceMoreThanOne = products.filter((price) =>
   price.price >= 1
 );
 console.log(productsPriceMoreThanOne);
+
+// lvl 1 - 16
+// Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items.
+
+// lvl 1 - 17
+//Use reduce to sum all the numbers in the numbers array.
+const sum = numbers.reduce((acc, cur) => acc + cur, 0);
+console.log(sum);
