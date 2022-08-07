@@ -1,4 +1,4 @@
-// lvl 1
+// lvl 1 - 1.
 
 const dog = {}
 // console.log(dog);
@@ -16,7 +16,7 @@ dog.getDogInfo = function() {
 }
 // console.log(dog.getDogInfo());
 
-//lvl 2
+//lvl 2.
 
 const users = {
   Alex: {
@@ -70,10 +70,10 @@ const users = {
   }
 };
 
-// lvl 2 - 1
+// lvl 2 - 1.
 // Find the person who has many skills in the users object.
 
-// lvl 2 - 2
+// lvl 2 - 2.
 // Count logged in users, count users having greater than equal to 50 points from the following object.
 
 const valuesCount = Object.values(users);
@@ -82,3 +82,17 @@ const morePoints = valuesCount.filter((users) =>
   users.points >= 50
 );
 // console.log('Have more points', morePoints);
+
+// lvl 2 - 4.
+//Set your name in the users object without modifying the original users object.
+
+const diegoKennedy = Object.assign({}, users)
+// console.log(diegoKennedy)
+
+// lvl 2 - 5.
+//Get all keys or properties of users object
+
+const allKeysOfUsers = Object.keys(diegoKennedy)
+// console.log(allKeysOfUsers)
+
+
