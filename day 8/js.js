@@ -73,9 +73,12 @@ const users = {
 // lvl 2 - 1
 // Find the person who has many skills in the users object.
 
-const manySkill = users.find((user) => user.points >= 40)
-console.log(manySkill)
-
 // lvl 2 - 2
 // Count logged in users, count users having greater than equal to 50 points from the following object.
 
+const valuesCount = Object.values(users);
+
+const morePoints = valuesCount.filter((users) =>
+  users.points >= 50
+);
+// console.log('Have more points', morePoints);
