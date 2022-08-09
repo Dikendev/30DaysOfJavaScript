@@ -75,10 +75,8 @@ console.log(w, h, a, p) //30 10 200 80
 // Iterate through the users array and get all the keys of the object using destructuring
 
 for (const {name, scores, skills, age} of users) {
-  console.log(`User: ${name} , score: ${scores}, skills: ${skills} and ${age} years old`);
-}
+  console.log(`User: ${name} , score: ${scores}, skills: ${skills} and ${age} years old`)
+};
 
 // lvl 2 - 2.
 // Find the persons who have less than two skills
-
-
