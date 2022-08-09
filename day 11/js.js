@@ -12,19 +12,19 @@ const users = [
 {
   name:'Brook',
   scores:75,
-  skills:['HTM', 'CSS', 'JS'],
+  skills:['HTML', 'CSS', 'JS'],
   age:16
 },
 {
   name:'Alex',
   scores:80,
-  skills:['HTM', 'CSS', 'JS'],
+  skills:['HTML', 'CSS', 'JS'],
   age:18
 },
 {
   name:'David',
   scores:75,
-  skills:['HTM', 'CSS'],
+  skills:['HTML', 'CSS'],
   age:22
 },
 {
@@ -36,19 +36,19 @@ const users = [
 {
   name:'Sara',
   scores:95,
-  skills:['HTM', 'CSS', 'JS'],
+  skills:['HTML', 'CSS', 'JS'],
   age: 26
 },
 {
   name:'Martha',
   scores:80,
-  skills:['HTM', 'CSS', 'JS'],
+  skills:['HTML', 'CSS', 'JS'],
   age:18
 },
 {
   name:'Thomas',
   scores:90,
-  skills:['HTM', 'CSS', 'JS'],
+  skills:['HTML', 'CSS', 'JS'],
   age:20
 }
 ];
@@ -68,8 +68,17 @@ console.log(fin, est, sw, den, nor);
 // lvl 1 - 3.
 // Destructure the rectangle object by its properties or keys.
 
-
-
-
 let { width: w, height: h, area: a, perimeter: p } = rectangle
 console.log(w, h, a, p) //30 10 200 80
+
+// lvl 2 - 1.
+// Iterate through the users array and get all the keys of the object using destructuring
+
+for (const {name, scores, skills, age} of users) {
+  console.log(`User: ${name} , score: ${scores}, skills: ${skills} and ${age} years old`);
+}
+
+// lvl 2 - 2.
+// Find the persons who have less than two skills
+
+
