@@ -31,15 +31,27 @@ console.log(stringPoints)
 let patternName1 = /^[A-Z][a-z].{3,12}$/;
 let first_name = 'Diego_kennedy';
 let resultName1 = patternName1.test(first_name);
-console.log(resultName1);
+// console.log(resultName1);
 
 let patternName2 = /^[A-Z][a-z]\D$/;
 let first_name2 = 'Diego-kennedy';
 let resultName2 = patternName2.test(first_name2);
-console.log(resultName2);
+// console.log(resultName2);
 
 let patternName3 = /^[A-Z][a-z]\D$/;
 let first_name3 = '1Diego_kennedy';
 let resultName3 = patternName3.test(first_name3);
-console.log(resultName3);
+// console.log(resultName3);
 
+// lvl  2 - 1.
+// Write a function called tenMostFrequentWords which get the ten most frequent word from a string?
+
+// pattern = ""
+paragraph =[`I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`];
+// tenMostFrequentWords = ""
+// console.log(tenMostFrequentWords(paragraph));
+
+
+const paragraphSet = new Set(paragraph);
+console.log(paragraphSet)
+// console.log(paragraphSet.size)
