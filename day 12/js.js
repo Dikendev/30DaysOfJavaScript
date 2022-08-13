@@ -20,18 +20,26 @@ let points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8'];
 let stringPoints = points.toString()
 console.log(stringPoints)
 
-let patternPoints = /^[1-9]+[0-9]*$/;
-let result = stringPoints.match(patternPoints);
-console.log(result);
+// lvl 1 - 3.
+// Write a pattern which identify if a string is a valid JavaScript variable.
 
-// console.log(points)
+// is_valid_variable('first_name') # True
+// is_valid_variable('first-name') # False
+// is_valid_variable('1first_name') # False
+// is_valid_variable('firstname') # True ok
 
+let patternName1 = /^[A-Z][a-z].{3,12}$/;
+let first_name = 'Diego_kennedy';
+let resultName1 = patternName1.test(first_name);
+console.log(resultName1);
 
-// const sortePoints = points.sort(function (a,b) {return a-b});
-// console.log(sortePoints)
-// const matchesP = sortePoints.match(patternPoints)
-// console.log(matchesP)
+let patternName2 = /^[A-Z][a-z]\D$/;
+let first_name2 = 'Diego-kennedy';
+let resultName2 = patternName2.test(first_name2);
+console.log(resultName2);
 
-// var sortePoints = points.map(function (x) {
-//   return parseInt(x, 10);
-// });
+let patternName3 = /^[A-Z][a-z]\D$/;
+let first_name3 = '1Diego_kennedy';
+let resultName3 = patternName3.test(first_name3);
+console.log(resultName3);
+
