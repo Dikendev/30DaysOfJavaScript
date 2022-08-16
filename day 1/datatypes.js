@@ -1,4 +1,5 @@
-typeof nome
-typeof quando
-typeof desistir
-typeof programar
+console.log(typeof 'Asabeneh') // string
+console.log(typeof 5) // number
+console.log(typeof true) // boolean
+console.log(typeof null) // object type
+console.log(typeof undefined) // undefined
