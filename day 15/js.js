@@ -1,47 +1,21 @@
-class Person {
-  constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+//lvl 1 - 1
+// Create an Animal class. The class will have name, age, color, legs properties and create different methods
+
+class Animal {
+  constructor(name, age, color, legs) {
+    this.name = name;
     this.age = age;
-    this.country = country;
-    this.city = city;
-    this.score = 0
-    this.skills = []
+    this.color = color;
+    this.legs = legs;
   }
-  getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName;
-    return fullName;
+  getFullDesc() {
+    const fullDesc = this.name + ' ' + this.age
+    return fullDesc
   }
-  get getScore() {
-    return this.score;
-  }
-  get getSkills() {
-    return this.skills;
-  }
-  set setScore(score) {
-    this.score += score;
-  }
-  set setSkill(skill) {
-    this.skills.push(skill)
-  }
-};
+}
 
+const Animal1 = new Animal('Joy', '6 months', 'white', 4);
+const Animal2 = new Animal('Capivara', '1 year', 'gray', 4);
 
-const person1 = new Person('Asdoegabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki')
-const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
-
-person1.setScore = 1;
-person1.setSkill = 'HTML';
-person1.setSkill = 'CSS';
-person1.setSkill = 'JavaScript';
-
-person2.setScore = 1;
-person2.setSkill = "Planning";
-person2.setSkill = 'Managing';
-person2.setSkill = 'Organiizing';
-
-console.log(person1.score)
-console.log(person2.score)
-
-console.log(person1.skills);
-console.log(person2.skills);
+console.log(Animal1);
+console.log(Animal2);
