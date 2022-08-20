@@ -135,3 +135,10 @@ console.log(studentToTxt);
 
 const studentsPropertiesTxt = JSON.stringify(student,['firstName', 'lastName', 'skills'], 4);
 console.log(studentsPropertiesTxt);
+
+// lvl 3 - 1
+// Parse the txt JSON to object.
+
+const txtJSON = JSON.parse(txt)
+console.log(txtJSON);
+
