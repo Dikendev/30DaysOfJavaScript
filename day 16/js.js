@@ -2,8 +2,8 @@ const skills = ['HTML', 'CSS', 'JS', 'React','Node', 'Python']
 let age = 250;
 let isMarried = true
 const student = {
-  firstName:'Asabeneh',
-  lastName:'Yetayehe',
+  firstName:'Diego',
+  lastName:'Kennedy',
   age:250,
   isMarried:true,
   skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
@@ -115,7 +115,7 @@ console.log(skillToTxt);
 // lvl 1 - 2.
 // Stringify the age variable.
 
-const ageToTxt = JSON.stringify(age,4);
+const ageToTxt = JSON.stringify(age, 4);
 console.log(ageToTxt);
 
 // lvl 1 - 3.
@@ -130,3 +130,8 @@ console.log(isMarriedToTxt);
 const studentToTxt = JSON.stringify(student, 4);
 console.log(studentToTxt);
 
+// lvl 2.
+// Stringify the students object with only firstName, lastName and skills properties
+
+const studentsPropertiesTxt = JSON.stringify(student,['firstName', 'lastName', 'skills'], 4);
+console.log(studentsPropertiesTxt);
