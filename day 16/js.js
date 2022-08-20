@@ -115,6 +115,9 @@ console.log(skillToTxt);
 // lvl 1 - 2.
 // Stringify the age variable.
 
+const ageToTxt = JSON.stringify(age,4);
+console.log(ageToTxt);
+
 // lvl 1 - 3.
 // Stringify the isMarried variable.
 
