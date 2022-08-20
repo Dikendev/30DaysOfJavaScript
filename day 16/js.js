@@ -125,5 +125,8 @@ const isMarriedToTxt = JSON.stringify(isMarried, 4);
 console.log(isMarriedToTxt);
 
 // lvl 1 - 4.
-
 // Stringify the student object.
+
+const studentToTxt = JSON.stringify(student, 4);
+console.log(studentToTxt);
+
