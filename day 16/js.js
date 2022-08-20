@@ -11,4 +11,4 @@ const user = {
   points: 30
 }
 
-const txt = JSON.stringify(user,['firstName'])
+const txt = JSON.stringify(user,['firstName', 'lastName', 'country', 'city', 'age'])
