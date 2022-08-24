@@ -136,9 +136,11 @@ console.log(studentToTxt);
 const studentsPropertiesTxt = JSON.stringify(student,['firstName', 'lastName', 'skills'], 4);
 console.log(studentsPropertiesTxt);
 
-// lvl 3 - 1
+// lvl 3 - 1.
 // Parse the txt JSON to object.
 
 const txtJSON = JSON.parse(txt)
 console.log(txtJSON);
 
+// lvl 3 - 2.
+// Find the user who has many skills from the variable stored in txt.
