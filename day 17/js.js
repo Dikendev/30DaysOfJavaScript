@@ -1,9 +1,9 @@
-localStorage.setItem('age', 200);
+// lvl 1
+// Store you first name, last name, age, country, city in your browser localStorage.
 
-localStorage.setItem('firstName', 'Asabeneh');
+localStorage.setItem('FirstName', 'Diego');
+localStorage.setItem('Age', 270);
+localStorage.setItem('Country', 'Brazil');
+localStorage.setItem('City', 'Santa Catarina');
 
-
-const skills = ['HTML', 'CSS', 'JS', 'React'];
-const skillsJSON = JSON.stringify(skills, undefined, 4);
-localStorage.setItem('skills', skillsJSON);
 console.log(localStorage);
