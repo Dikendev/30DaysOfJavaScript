@@ -255,8 +255,9 @@ switch (weaterToday) {
   case 'September':
     alert('Autumn')
     break;
-  case 'Octuber'
+  case 'Octuber':
     alert('Autumn')
+    break;
   default:
     alert('Summer')
     break;
