@@ -29,3 +29,32 @@ nodeList[3].innerHTML = 'Fourth Paragraph';
 
 // lvl 1 - 5
 // Set id and class attribute for all the paragraphs using different attribute setting methods
+
+p1.classList.add('add')
+
+nodeList[2].className = 'className'
+// // lvlv 2 - 1
+// Change stye of each paragraph using JavaScript(eg. color, background, border, font-size, font-family)
+
+nodeList.forEach((p, i) => {
+    p.style.fontSize = '40px';
+    p.style.color = 'blue';  
+    p.style.fontFamily = 'roboto';
+    p.style.border = '2px dotted white';
+    p.style.backgroundColor = 'white';
+
+})
+
+// lvl 2 - 1
+// Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
+
+
+nodeList.forEach((title, i) => {
+  title.style.fontSize = '50px' //
+  if (i % 2 === 0) {
+    title.style.color = 'green'
+  } else {
+    title.style.color = 'red'
+  }
+});
+
